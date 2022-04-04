@@ -3,12 +3,23 @@ import './App.css';
 
 
 
+
 function App(props) {
- const {employee}=props;
+ const {name,location,age,bloodGroup,profileImg}=props.employee;
     
 return(
   <div className="container">
-  {/* Start your React code here */}
+    <img src={profileImg} alt="image"></img>
+    <div className='data'>
+    <h1>{name}</h1>
+    <h4>Location</h4>
+    <h2>{location}</h2>
+    <h4>Blood group</h4>
+    <h2>{bloodGroup}</h2>
+    <h4>Age</h4>
+    <h2>{age}</h2>
+    </div>
+    
 </div>
 )
 }
