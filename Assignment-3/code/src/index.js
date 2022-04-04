@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const Person={
+  Name:'Alan Ford',
+  EmployeeID:'00005152',
+  Appointment:'9:00 (24-05-2016)',
+  Email:'alan.form@email.nl',
+  Phone:+3112345679,
+  profileImg: 'https://www.w3schools.com/howto/img_avatar.png'
+
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App Person={Person}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
